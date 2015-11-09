@@ -1,0 +1,10 @@
+  <div ng-controller="getMessagesController">
+    <p ng-repeat="message in messages">{{message.author}}: {{message.message}}</p>
+  </div>
+  <div ng-controller="setMessageController">
+    <form ng-submit="addMessage()">
+      <div class="form-group">
+        <input type="text" ng-model="newMessage" placeholder="New message" class="form-control">
+      </div>
+    </form>
+  </div>
