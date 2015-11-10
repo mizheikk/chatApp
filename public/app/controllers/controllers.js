@@ -1,11 +1,17 @@
 var chatAppControllers = angular.module('chatAppControllers', []);
 
+var username;
+var timestamp;
+var errorMsg;
+
 chatAppControllers.controller('loginController', function($route, $scope, $location, FirebaseService) {
+
   $scope.addUser = function() {
-      var username = $scope.newUsername;
+      username = $scope.newUsername;
       var promise = FirebaseService.addUser(username);
-      promise.then(function(timestamp) {
-        $location.url("chat/"+username+"/"+timestamp);
+      promise.then(function(tms) {
+        timestamp = tms;
+        $location.url("chat/");
       }, function(reason) {
         $scope.info='Failed: ' + reason;
       }, function(update) {
@@ -16,9 +22,6 @@ chatAppControllers.controller('loginController', function($route, $scope, $locat
 
 chatAppControllers.controller('setMessageController', function($location, $routeParams, $scope, FirebaseService) {
 
-  var username = $routeParams.user;
-  var timestamp = $routeParams.timestamp;
-
   $scope.addMessage = function() {
     var promise = FirebaseService.checkTimestamp(username,timestamp);
     promise.then(function() {
@@ -26,7 +29,7 @@ chatAppControllers.controller('setMessageController', function($location, $route
       $scope.newMessage = '';
     }, function() {
       $location.url("/");
-      alert("Error! Rotten session..");
+      errorMsg = "Error! Session is not valid.";
     });
   }
 });
