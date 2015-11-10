@@ -27,7 +27,7 @@ chatAppControllers.controller('setMessageController', function($location, $route
     }, function() {
       $location.url("/");
       alert("Error! Rotten session..");
-      });
+    });
   }
 });
 

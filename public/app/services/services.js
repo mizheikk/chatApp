@@ -52,4 +52,17 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
       message:msg
     });
   }
+
+  this.checkTimestamp = function(name,timestamp) {
+    var userRef = new Firebase('https://luminous-torch-1910.firebaseio.com/users/'+name);
+    var deferred = $q.defer();
+
+    userRef.once('value', function(data) {
+      if(data.val() == timestamp)
+        deferred.resolve();
+      else
+        deferred.reject();
+    });
+    return deferred.promise;
+  }
 });
