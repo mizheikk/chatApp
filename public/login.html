@@ -1,6 +1,7 @@
 <div ng-controller="loginController">
   <p>{{info}}</p>
+  <p ng-repeat="user in users">{{user.$id}}</p>
   <form ng-submit="addUser()">
-    <input type="text" ng-model="newUsername" placeholder="username">
+    <input type="text" ng-model="newUsername" placeholder="username" required>
   </form>
 </div>

@@ -6,17 +6,20 @@ var errorMsg;
 
 chatAppControllers.controller('loginController', function($route, $scope, $location, FirebaseService) {
 
+  var users = FirebaseService.getUsers();
+  $scope.users = users;
+
   $scope.addUser = function() {
-      username = $scope.newUsername;
-      var promise = FirebaseService.addUser(username);
-      promise.then(function(tms) {
-        timestamp = tms;
-        $location.url("chat/");
-      }, function(reason) {
-        $scope.info='Failed: ' + reason;
-      }, function(update) {
-        $scope.info='Failed: ' + update;
-      });
+    username = $scope.newUsername;
+    var promise = FirebaseService.addUser(username);
+    promise.then(function(tms) {
+      timestamp = tms;
+      $location.url("chat/");
+    }, function(reason) {
+      $scope.info='Failed: ' + reason;
+    }, function(update) {
+      $scope.info='Failed: ' + update;
+    });
   }
 });
 
