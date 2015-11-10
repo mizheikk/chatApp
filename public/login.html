@@ -1,7 +1,22 @@
-<div ng-controller="loginController">
-  <p>{{info}}</p>
-  <p ng-repeat="user in users">{{user.$id}}</p>
-  <form ng-submit="addUser()">
-    <input type="text" ng-model="newUsername" placeholder="username" required>
-  </form>
+<div>
+  <h3>(=^‥^=)ノApp</h3>
+</div>
+
+<div class="jumbotron">
+  <div class="row marketing" ng-controller="loginController">
+    <div class="col-lg-6" style="overflow-y: scroll; height:300px;">
+      <h4>Users</h4>
+      <ul>
+        <li ng-repeat="user in users">{{user.$id}}</li>
+      </ul>
+    </div>
+
+    <div class="col-lg-6">
+      <h4>Log in</h4>
+      <p>{{info}}</p>
+      <form ng-submit="addUser()">
+        <input type="text" ng-model="newUsername" placeholder="username" required>
+      </form>
+    </div>
+  </div>
 </div>

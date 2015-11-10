@@ -21,7 +21,7 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
         });
       }
       else {
-        deferred.reject("Username is already in use.");
+        deferred.reject("username is already in use.");
       }
     });
     return deferred.promise;
@@ -62,4 +62,8 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
     return deferred.promise;
   }
 
+  this.logOut = function(name) {
+    var ref = new Firebase(databaseURL+'/users/'+name);
+    ref.remove();
+  }
 });

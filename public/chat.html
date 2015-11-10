@@ -1,4 +1,10 @@
-  <div ng-controller="getMessagesController">
+<div>
+  <h3><a href='#' class="pull-right" ng-controller="logOutController" ng-click="exit()">Sign out</a></h3>
+  <h3>(=^‥^=)ノApp</h3>
+</div>
+
+<div class="jumbotron">
+  <div ng-controller="getMessagesController" style="overflow-y: scroll; height:300px;">
     <p ng-repeat="message in messages">{{message.author}}: {{message.message}}</p>
   </div>
   <div ng-controller="setMessageController">
@@ -8,3 +14,4 @@
       </div>
     </form>
   </div>
+</div>

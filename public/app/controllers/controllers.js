@@ -41,3 +41,10 @@ chatAppControllers.controller('getMessagesController', function($scope, Firebase
   var messages = FirebaseService.getMessages();
   $scope.messages = messages;
 });
+
+chatAppControllers.controller('logOutController', function($location, $scope, FirebaseService) {
+  $scope.exit = function() {
+    FirebaseService.logOut(username);
+    $location.url("/");
+  }
+});
