@@ -22,7 +22,7 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
         });
       }
       else {
-        deferred.reject("Username is allready in use.");
+        deferred.reject("Username is already in use. Take another!");
       }
     });
     return deferred.promise;
