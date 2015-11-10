@@ -10,7 +10,7 @@ var MIN_SCRIPTS_FILE = 'scripts.min.js'
 gulp.task('scripts', function(){
   return gulp.src([SCRIPTS_FOLDER + '/main.js', SCRIPTS_FOLDER + '/**/*.js'])
     .pipe(concat(MIN_SCRIPTS_FILE))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(DEST_FOLDER));
 });
 

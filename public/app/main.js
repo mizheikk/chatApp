@@ -3,7 +3,7 @@ var chatApp = angular.module('chatApp', ['ngRoute','chatAppControllers','chatApp
 chatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/chat/:user', {
+      when('/chat/:user/:timestamp', {
         templateUrl: 'chat.html'
       }).
       otherwise({

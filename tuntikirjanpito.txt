@@ -1,4 +1,23 @@
-Päivämäärä        Tunnit
-Perjantai 6.11    7
-Lauantai 7.11     4
-Sunnuntai 8.11    8 
+Päivämäärä        Tunnit    Kuvaus
+--------------------------------------------------------------------------------
+Perjantai 6.11    7         Angulariin ja projektissa käytettävään
+                            boilerplateen tutustumista. Aiheen keksiminen.
+--------------------------------------------------------------------------------
+Lauantai 7.11     4         Firebase toimimaan.
+--------------------------------------------------------------------------------
+Sunnuntai 8.11    8         Koodausta. Sovellus toimii!
+                            Boilerplaten siistimistä ja projektin lisääminen
+                            githubiin.
+--------------------------------------------------------------------------------
+Maanantai 9.11    13        Angularin reititykseen ja näkymiin tutustumista.
+
+                            Uusi ominaisuus: käyttäjä voi nyt syöttää nimensä.
+
+                            Turhauttavia hetkiä: unohdin Gulpin olemassaolon ja
+                            ihmettelin miksi mikään ei muutu.. ARGH!
+
+                            Lisää uutta: järjestelmä hyväksyy vain yhden
+                            samannimisen käyttäjän. Käyttäjänimi on myös sidottu
+                            tunnisteeseen (aikaleima).
+--------------------------------------------------------------------------------
+Tunnit yhteensä   32
