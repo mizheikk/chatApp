@@ -37,9 +37,14 @@ chatAppControllers.controller('setMessageController', function($location, $route
   }
 });
 
-chatAppControllers.controller('getMessagesController', function($scope, FirebaseService) {
+chatAppControllers.controller('getMessagesController', function($scope, FirebaseService, $location, $anchorScroll) {
   var messages = FirebaseService.getMessages();
   $scope.messages = messages;
+
+  $scope.$watchCollection('messages', function() {
+    $location.hash('bottom');
+    $anchorScroll();
+  });
 });
 
 chatAppControllers.controller('logOutController', function($location, $scope, FirebaseService) {

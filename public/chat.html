@@ -6,6 +6,10 @@
 <div class="jumbotron">
   <div ng-controller="getMessagesController" style="overflow-y: scroll; height:300px;">
     <p ng-repeat="message in messages">{{message.author}}: {{message.message}}</p>
+
+    <p>-- end of messages --</p>
+    <p id='bottom'> </p>
+
   </div>
   <div ng-controller="setMessageController">
     <form ng-submit="addMessage()">

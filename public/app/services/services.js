@@ -39,7 +39,12 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
 
   this.getMessages = function() {
     var messagesRef = dataRef.child("messages");
+    /*
+    var query = messagesRef.limitToLast(8);
+    var messages = $firebaseArray(query);
+    */
     var messages = $firebaseArray(messagesRef);
+
     return messages;
   }
 
