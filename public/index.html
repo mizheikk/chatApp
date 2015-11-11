@@ -8,6 +8,7 @@
     <title>chatApp</title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Angular -->
     <script src="bower_components/angular/angular.min.js"></script>
@@ -25,7 +26,11 @@
     <![endif]-->
   </head>
   <body>
-    <div ng-view class="container">
+    <div class="container">
+      <div ng-view></div>
+      <footer class="footer">
+        <a href="https://github.com/mizheikk/chatApp">Info and source codes.</a>
+      </footer>
     </div>
   </body>
 </html>
