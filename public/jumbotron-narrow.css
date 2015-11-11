@@ -30,9 +30,12 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
+/* Make the chat message input higher*/
+#inputNewMessage {
+  height: 50px;
+}
 /* Customize container */
 @media (min-width: 768px) {
   .container {

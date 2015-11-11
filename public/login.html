@@ -4,19 +4,21 @@
 
 <div class="jumbotron">
   <div class="row marketing" ng-controller="loginController">
-    <div class="col-sm-6" style="overflow-y: scroll; height:300px;">
+    <div class="col-sm-4" style="overflow-y: scroll; height:300px;">
       <h4>Users</h4>
       <ul>
         <li ng-repeat="user in users">{{user.$id}}</li>
       </ul>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-8">
       <h4>Log in</h4>
       <p>{{info}}</p>
-      <form ng-submit="addUser()">
-        <input type="text" ng-model="newUsername" placeholder="username" required>
-        <button type="submit" class="btn btn-success">Log in</button>
+      <form ng-submit="addUser()" class="form-inline">
+        <div class="form-group">
+          <input type="text" ng-model="newUsername" placeholder="username" class="form-control" required>
+          <button type="submit" class="btn btn-success">Log in</button>
+        </div>
       </form>
     </div>
   </div>
