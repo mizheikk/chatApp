@@ -1,15 +1,15 @@
 Päivämäärä        Tunnit    Kuvaus
 --------------------------------------------------------------------------------
-Perjantai 6.11    7         Angulariin ja projektissa käytettävään
+Perjantai   6.11    7       Angulariin ja projektissa käytettävään
                             boilerplateen tutustumista. Aiheen keksiminen.
 --------------------------------------------------------------------------------
-Lauantai 7.11     4         Firebase toimimaan.
+Lauantai    7.11    4       Firebase toimimaan.
 --------------------------------------------------------------------------------
-Sunnuntai 8.11    8         Koodausta. Sovellus toimii!
+Sunnuntai   8.11    8       Koodausta. Sovellus toimii!
                             Boilerplaten siistimistä ja projektin lisääminen
                             githubiin.
 --------------------------------------------------------------------------------
-Maanantai 9.11    13        Angularin reititykseen ja näkymiin tutustumista.
+Maanantai   9.11    13      Angularin reititykseen ja näkymiin tutustumista.
 
                             Uusi ominaisuus: käyttäjä voi nyt syöttää nimensä.
 
@@ -20,4 +20,18 @@ Maanantai 9.11    13        Angularin reititykseen ja näkymiin tutustumista.
                             samannimisen käyttäjän. Käyttäjänimi on myös sidottu
                             tunnisteeseen (aikaleima).
 --------------------------------------------------------------------------------
-Tunnit yhteensä   32
+Tiistai     9.11    12      Gitin kanssa tappelua. No opinpa paljon uutta..
+                            Demojen katsomista. Sovellukselle käyttöliittymä.
+                            Uusi ominaisuus: käyttäjä voi kirjautua ulos.
+                            Käyttäjädata siirretty osoiteriviltä muuttujiin.
+                            Angularin ja Firebasen opettelua.
+                            Sovellus Herokuun.
+--------------------------------------------------------------------------------
+Keskiviikko 9.11     n      Käyttöliittymän hiomista.
+                            Koodin siistimistä.
+                            Uusi ominaisuus: autoscroll.
+                            Angularin ja Firebasen opettelua.
+                            Selvitin miten Firebasen autentikaatio toimii.
+--------------------------------------------------------------------------------
+
+Tunnit yhteensä      44
