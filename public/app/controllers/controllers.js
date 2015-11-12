@@ -2,7 +2,6 @@ var chatAppControllers = angular.module('chatAppControllers', []);
 
 var username;
 var timestamp;
-var errorMsg;
 
 chatAppControllers.controller('loginController', function($route, $scope, $location, FirebaseService) {
 
@@ -41,10 +40,13 @@ chatAppControllers.controller('getMessagesController', function($scope, Firebase
   var messages = FirebaseService.getMessages();
   $scope.messages = messages;
 
-  $scope.$watchCollection('messages', function() {
-    $location.hash('bottom');
-    $anchorScroll();
-  });
+  $scope.scrollDown = function() {
+    $scope.$watchCollection('messages', function() {
+      $location.hash('bottom');
+      $anchorScroll();
+    });
+  }
+  $scope.scrollDown();
 });
 
 chatAppControllers.controller('logOutController', function($location, $scope, FirebaseService) {
