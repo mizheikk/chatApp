@@ -20,18 +20,31 @@ Maanantai   9.11    13      Angularin reititykseen ja näkymiin tutustumista.
                             samannimisen käyttäjän. Käyttäjänimi on myös sidottu
                             tunnisteeseen (aikaleima).
 --------------------------------------------------------------------------------
-Tiistai     9.11    12      Gitin kanssa tappelua. No opinpa paljon uutta..
+Tiistai     10.11    12     Gitin kanssa tappelua. No opinpa paljon uutta..
                             Demojen katsomista. Sovellukselle käyttöliittymä.
                             Uusi ominaisuus: käyttäjä voi kirjautua ulos.
                             Käyttäjädata siirretty osoiteriviltä muuttujiin.
                             Angularin ja Firebasen opettelua.
                             Sovellus Herokuun.
 --------------------------------------------------------------------------------
-Keskiviikko 9.11     n      Käyttöliittymän hiomista.
+Keskiviikko 11.11     10    Käyttöliittymän hiomista.
                             Koodin siistimistä.
                             Uusi ominaisuus: autoscroll.
                             Angularin ja Firebasen opettelua.
                             Selvitin miten Firebasen autentikaatio toimii.
 --------------------------------------------------------------------------------
+Torstai 12.11         6     Autentikoinin toteutusta Firebasen työkaluilla.
+                            Web-selainohjelmoinnin materiaaleissa esitelty
+                            $firebaseAuth on vanhentunut. Sekoilua Angularin
+                            promisen kanssa.
+--------------------------------------------------------------------------------
+Perjantai 13.11       4     Lisää asynkronisen ohjelmoinnin ihmettelyä.
+                            TODO:opettele kunnolla!
+                            Päätös: Firebase-autentikointi jää
+                            pois palautettavasta versiosta. Nyt käytössä oleva
+                            aikaleima on ihan ok ja ohjelma toimii kelvollisesti.
 
-Tunnit yhteensä      44
+                            Työn palautus.
+--------------------------------------------------------------------------------
+
+Tunnit yhteensä      64

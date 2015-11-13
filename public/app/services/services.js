@@ -3,7 +3,6 @@ var chatAppServices = angular.module('chatAppServices', ['firebase']);
 chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseArray, $q) {
   var databaseURL = 'https://luminous-torch-1910.firebaseio.com';
   var dataRef = new Firebase(databaseURL);
-  //var data = $firebaseObject(dataRef);
 
   this.addUser = function(name) {
     var ref= new Firebase(databaseURL);
@@ -39,10 +38,6 @@ chatAppServices.service('FirebaseService', function($firebaseObject, $firebaseAr
 
   this.getMessages = function() {
     var messagesRef = dataRef.child("messages");
-    /*
-    var query = messagesRef.limitToLast(8);
-    var messages = $firebaseArray(query);
-    */
     var messages = $firebaseArray(messagesRef);
 
     return messages;
